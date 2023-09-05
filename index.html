@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
 
-    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/sytle.css">
-</head>
-<body>
-    
-    
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    </div>
-  </nav>
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/util.css" />
+    <link rel="stylesheet" href="assets/css/sytle.css" />
+  </head>
+  <body>
+    <!-- navbar menu -->
+    <nav class="white z-depth-0">
+      <div class="nav-wrapper">
+        <a href="#!" class="blue-text">Home</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-  </ul>
+    <!-- left side menu -->
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/images/back.jpg" />
+          </div>
+          <a href="#user"><img class="circle" src="assets/images/pic.jpg" /></a>
+          <a href="#name"
+            ><span class="white-text name">Vahid Golpaeygani</span></a
+          >
+          <a href="#email"
+            ><span class="white-text email">vahidglp@gmail.com</span></a
+          >
+        </div>
+      </li>
+      <li>
+        <a href="#!"
+          ><i class="material-icons">insert_link</i>vahidglp@yahoo.com</a
+        >
+      </li>
+      <li>
+        <a href="#!"
+          ><i class="material-icons">insert_link</i>>vahidglp@gmail.com</a
+        >
+      </li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Options</a></li>
+      <li><a class="waves-effect" href="#!">www.google.com</a></li>
+      <li><a class="waves-effect" href="#!">www.yahoo.com</a></li>
+      <li><a class="waves-effect" href="#!">www.aol.com</a></li>
+    </ul>
 
+    <!-- mainpages -->
+    <section class="flex-c-m flex-col sizefull p-r-20 p-l-20 p-t-100">
+      <img
+        src="assets/images/jdi.jpg"
+        alt="just dot it pic"
+        class="w-full max-w-250 m-t- mb-10"
+      />
+      <a
+        class="waves-effect waves-light btn rounded_pill w-full max-w-250 m-t-10 mb-10"
+      >
+        <i class="material-icons left">cloud</i>Learn Programming
+      </a>
 
-
+      <a
+        class="waves-effect waves-light btn rounded_pill w-full max-w-250 m-t-10 mb-10"
+      >
+        <i class="material-icons left">cloud</i>CodeYad Academy
+      </a>
+    </section>
 
     <script src="assets/materialize/js/materialize.min.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
